@@ -1,0 +1,35 @@
+.loading {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #FCC453,
+      #FCC453 0.5em,
+      rgba(252, 196, 83, 0.8) 0.5em,
+      rgba(252, 196, 83, 0.8) 1em);
+  background-size: 150% 100%;
+  padding: 1em 2em;
+  margin: 1em margin;
+  animation: loading 1s linear infinite;
+  color: #FFFFFF;
+  max-width: 30em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: opacity 0.25s linear;
+  border-radius: 0.25em;
+  text-align: center;
+}
+
+.loaded {
+  opacity: 0;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -3em 0;
+  }
+}
